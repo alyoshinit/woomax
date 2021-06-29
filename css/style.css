@@ -125,7 +125,10 @@ body {
 
 /* page */
 .main__page {
-  background: url('../img/bg__main.jpg') no-repeat center center fixed;
+  min-height: 100vh;
+
+
+  background: url('../img/bg__main.png') no-repeat center;
   -webkit-background-size: cover;
   background-size: cover;
 }
