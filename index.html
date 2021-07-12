@@ -9,6 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <svg width="0" height="0">
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 14" id="left__arrow">
+  <path fill="#E5A56B" fill-rule="evenodd" d="M7.942.308a.625.625 0 010 .884L2.134 7l5.808 5.808a.625.625 0 11-.884.884l-6.25-6.25a.625.625 0 010-.884l6.25-6.25a.625.625 0 01.884 0z" clip-rule="evenodd" class="svg__wood" />
+  </symbol>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" fill="none" viewBox="0 0 9 14">
+  <path fill="#E5A56B" fill-rule="evenodd" d="M1.058.308a.625.625 0 000 .884L6.866 7l-5.808 5.808a.625.625 0 10.884.884l6.25-6.25a.625.625 0 000-.884L1.942.308a.625.625 0 00-.884 0z" id="right__arrow" clip-rule="evenodd"/>
+  </svg>
 </head>
 <body>
   <div class="main__page">
@@ -430,9 +440,48 @@
           <button class="question__item-button" type="button">
               <span class="question__item-button-text">Рассчитать стоимость</span>
             </button>
+        </div> <!-- /.question__item -->
+      </div> <!-- /.question -->
+    </div> <!-- /.container -->
+  </section>
+
+  <section class="section consulting__worker">
+    <div class="container">
+      <div class="consulting">
+        <div class="consulting__title">сОВРЕМЕННОЕ <br>И НАДЁЖНОЕ ПРОИЗВОДСТВО</br></div>
+        <div class="consulting__with-bar">
+          <div class="consulting__subtitle">
+            За 10 лет работы наши специалисты покрасили более 120.000 м<sup>2</sup> фасадов домов и интерьера.
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="consulting__subtitle-two">Фабрика Woomax - это профессиональный центр производства, обработки и покраски изделий из дерева для фасадной и интерьерной отделки. <p>Мы предлагаем своим клиентам максимально широкий ассортимент современных строительных отделочных материалов по индивидуальным условиям.</p> <p>Применяя умные решения и технологии мы выводим на совершенно новый уровень понятия отделки фасада и интерьера из массива дерева, обеспечивая самые высокие эксплуатационные и эстетические характеристики своей продукции.</p></div>   
+        <div class="consulting__item">
+          <div class="consulting__item-title"><span class="colortext">Максимально упросить для заказчика процесс индивиуального строительства</span></div>
+          <div class="consulting__item-subtitle">Равняться на самих себя и на своё высокое качество — без компромиссов. Честные и неравнодушный подход к каждому заказчику и проекту. Все это — неизменный девиз WOOMAX ставший основой всей работы</div>
+        </div> <!-- /.consulting__item -->
+      </div> <!-- /.consulting -->
+    </div> <!-- /.container -->
+  </section>
+
+  <section class="section examples__works">
+      <div class="examples__title">пОСМОТРИТЕ ПРИМЕРЫ РАБОТ КОТОРЫЕ МЫ УЖЕ РЕАЛИЗОВАЛИ</div>
+      <div class="examples">
+      <div class="examples__item">
+          <img class="examples__image" src="img/examples/home.png" alt="photo: home">
+          <div class="arrow__bg">
+            <svg class="arrow left">
+              <use xlink:href="#left__arrow"></use>
+            </svg>
+          </div>
+          <img class="examples__image" src="img/examples/home.png" alt="photo: home">
+          <div class="arrow__bg">
+            <svg class="arrow right">
+              <use xlink:href="#right__arrow"></use>
+            </svg>
+          </div> 
+          <img class="examples__image" src="img/examples/home.png" alt="photo: home">
+        </div> <!-- /.examples__item -->
+      </div> <!-- /.examples -->
   </section>
 </body>
 </html>
