@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Woomax</title>
+
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  </svg>
 </head>
 <body>
   <div class="main__page">
@@ -460,12 +460,22 @@
       <div class="examples__item">
           <img class="examples__image" src="img/examples/home.png" alt="photo: home">
           <div class="arrow__bg">
+            <svg width="0" height="0">
+              <symbol xmlns="http://www.w3.org/2000/svg" fill="wood" viewBox="0 0 9 14" id="left__arrow">
+              <path fill="#E6A56B" fill-rule="evenodd" d="M7.942.308a.625.625 0 010 .884L2.134 7l5.808 5.808a.625.625 0 11-.884.884l-6.25-6.25a.625.625 0 010-.884l6.25-6.25a.625.625 0 01.884 0z" clip-rule="evenodd"></path>
+              </symbol>
+            </svg>
             <svg class="arrow left">
               <use xlink:href="#left__arrow"></use>
             </svg>
           </div>
           <img class="examples__image" src="img/examples/home.png" alt="photo: home">
           <div class="arrow__bg">
+            <svg width="0" height="0" >
+              <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 14" id="right__arrow">
+                <path fill="#E5A56B" fill-rule="evenodd" d="M1.058.308a.625.625 0 000 .884L6.866 7l-5.808 5.808a.625.625 0 10.884.884l6.25-6.25a.625.625 0 000-.884L1.942.308a.625.625 0 00-.884 0z" clip-rule="evenodd"/>
+              </symbol>
+            </svg>
             <svg class="arrow right">
               <use xlink:href="#right__arrow"></use>
             </svg>
@@ -474,5 +484,89 @@
         </div> <!-- /.examples__item -->
       </div> <!-- /.examples -->
   </section>
+
+  <section class="section reviews__clients">
+    <div class="container">
+      <div class="reviews__title">Отзывы наших клиентов</div>
+      <div class="reviews">
+        <div class="reviews__item">
+          <img src="img/reviews/phone__mockup.jpg" alt="photo: review" class="reviews__image">
+          <img src="img/reviews/phone__mockup.jpg" alt="photo: review" class="reviews__image">
+          <img src="img/reviews/phone__mockup.jpg" alt="photo: review" class="reviews__image">
+          <img src="img/reviews/phone__mockup.jpg" alt="photo: review" class="reviews__image">
+        </div> <!-- /.reviews__item -->
+      </div> <!-- /.reviews -->
+    </div> <!-- /.container -->
+  </section>
+
+  <section class="section contacts-and-map">
+    <div class="container">
+      <div class="contacts">
+        <div class="contacts__item">
+          <div class="contacts__item-title">Контакты</div>
+          <div class="contacts__item-showroom">
+            <span class="contacts__item-showroom-title">АДРЕС ШОУ-РУМА:</span>
+            <span class="contacts__item-showroom-adress">г.Нижний Новгород, ТЦ Этажи, 6 этаж</span>
+          </div>
+          <div class="contacts__item-factory">
+            <span class="contacts__item-factory__title">АДРЕС ПРОИЗВОДСТВА:</span>
+            <span class="contacts__item-factory__adress">г. Нижний Новгород, ул. Московское шоссе 320б</span>
+          </div>
+          <div class="contacts__item-tel">
+            <span class="contacts__item-tel__title">ТЕЛЕФОН:</span>
+            <a href="tel:+79524562547" class="contacts__item-telephone">+7 (952) 456-25-47</a>
+          </div>
+          <div class="contacts__item-mail">
+            <span class="contacts__item-mail__title">ЭЛЕКТРОННАЯ ПОЧТА:</span>
+            <a href="mailto: info@mail.ru" class="contacts__item-e__mail">info@mail.ru</a>
+          </div>
+          <div class="contacts__item-social__networks">
+            <a href="#" class="social__network">
+              <img src="img/contacts/telegramm.png" alt="icon: telegramm">
+            </a>
+            <a href="#" class="social__network">
+              <img src="img/contacts/whatsapp.png" alt="icon: whatsapp">
+            </a>
+            <a href="#" class="social__network">
+              <img src="img/contacts/viber.png" alt="icon: viber">
+            </a>
+          </div>
+        </div> <!-- /contacts__item -->
+      </div> <!-- /.contacts -->
+    </div> <!-- /.container -->
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__item">
+        <div class="header__inner">
+            <nav class="nav">
+              <div class="logo">
+                <a href="#" class="logo__link">
+                  <img src="img/logo.svg" alt="woomax: logo">
+                </a>
+                <a href="#" class="logo__text">woomax</a>
+              </div>
+              <div class="nav__menu">
+                <a href="tel:+79001234567" class="nav__link telephone">+7 (900) 123-45-67</a>
+                  <button class="nav__menu-button">
+                    <div class="nav__button-text">Заказать звонок</div>
+                  </button> <!-- /.nav__button -->
+              </div>
+            </nav> 
+          </div> <!-- /.header_inner -->
+        </div> <!-- /.footer__item -->
+    </div> <!--/.container -->
+
+    <hr>
+
+    <div class="container">
+      <div class="footer__end">
+        <div class="copyright">© 2021 Все права защищены</div>
+        <a href="#" class="privacy__policy">Политика конфиденциальности</a>
+        <span class="developer">Сайт разработан «DigitalBaza 2.0» и «AlyoshinDev»</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
