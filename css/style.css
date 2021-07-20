@@ -22,11 +22,12 @@
 }
 
 /* body and container */ 
-
 body {
   font-family: 'Neumann Regular', sans-serif;
   color: #252831;
   margin: 0;
+
+  overflow-x: hidden;
 }
 
 .container {
@@ -649,6 +650,8 @@ input:-ms-input-placeholder {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .processing__material {
@@ -676,8 +679,9 @@ input:-ms-input-placeholder {
   margin: 0 auto;
 
   margin-right: 25px;
-  width: 212px;
-  height: 323px;
+  max-width: 212px;
+  max-height: 323px;
+  margin-bottom: 30px;
 }
 
 .processing__item-ellipse {
@@ -1649,4 +1653,132 @@ hr {
 .privacy__policy {
   text-decoration: none;
   color: inherit;
+}
+
+/* adaptive */
+@media (max-width: 1250px) {
+  .main__page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .logo__text {
+    font-size: 24px;
+  }
+
+  .main__subtitle {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .main__title {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  .pick {
+    padding-left: 30px;
+  }
+
+  .painting__material {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  .painting__material__item {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .painting__material__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .cut__material {
+    padding-left: 30px;
+
+    height: 520px
+  }
+
+  .processing__title {
+    margin-bottom: 50px;
+  }
+
+  .processing__item {
+    margin: 0;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .processing-n-grinding {
+    display: flex;
+    align-items: center;
+  }
+
+  .processing__item-ellipse {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .processing__item-title {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 20px;
+  }
+
+  .processing__item__price-painting {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .home {
+    padding-left: 30px;
+  }
+
+  .last {
+    margin-right: 40px;
+  }
+
+  .service__item:last-child {
+    margin-right: 40px;
+  }
+
+  .estimate__painting {
+    padding-left: 30px;
+  }
+  
+  .technology {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .technology__item {
+    margin-bottom: 20px;
+  }
+
+  .questions__answers {
+    padding-left: 30px;
+    height: 430px;
+  }
+
+  .consulting {
+    padding-left: 30px;
+  }
+
+  .contacts-and-map {
+    padding-left: 30px;
+  }
+
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
