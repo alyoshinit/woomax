@@ -1316,6 +1316,7 @@ input:-ms-input-placeholder {
   line-height: 36px;
 
   text-transform: uppercase;
+  text-align: center;
 
   margin-bottom: 15px;
 }
@@ -1780,5 +1781,28 @@ hr {
   .footer {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media(max-width: 1175px) {
+  .last {
+    margin-right: 25px;
+  }
+
+  .card__item:last-child {
+    margin-right: 0;
+  }
+
+  .mockup {
+    left: 500px;
+  }
+
+  .advantages__icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .advantages__icons-item {
+    margin-bottom: 50px;
   }
 }
