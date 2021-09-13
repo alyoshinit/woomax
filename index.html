@@ -13,54 +13,56 @@
 </head>
 <body>
   <div class="main__page">
-    <div class="container">
-      <header class="header">
-          <div class="header__inner">
-            <nav class="nav">
-              <div class="logo">
-                <a href="#" class="logo__link">
-                  <img src="img/logo.svg" alt="woomax: logo">
-                </a>
-                <a href="#" class="logo__text">woomax</a>
+    <header class="header fixed" id="header">
+        <div class="container">
+            <div class="header__inner">
+              <nav class="nav">
+                <div class="logo">
+                  <a href="#" class="logo__link">
+                    <img src="img/logo.svg" alt="woomax: logo">
+                  </a>
+                  <a href="#" class="logo__text">woomax</a>
+                </div>
+                <div class="nav__menu">
+                  <a href="tel:+79001234567" class="nav__link telephone">+7 (900) 123-45-67</a>
+                    <button class="nav__menu-button open__popup">
+                      <div class="nav__button-text">Заказать звонок</div>
+                    </button> <!-- /.nav__button -->
+                </div>
+              </nav>
+            </div>
+          </div> <!-- /.container -->
+        </header> <!-- /.header -->
+
+        <div class="container">
+          <div class="page" id="main">
+            <div class="main">
+                <span class="main__title">Производство доски для фасадной и интерьерной отделки</span>
+                <p class="main__subtitle">Обработки, покраска и декорирование изделий из массива дерева</p>
+            </div>
+
+            <div class="main__form">
+              <form action="/woomax" method="POST">
+                <input type="text" name="user__name" placeholder="Ваше имя">
+                <button class="button__form" type="button">
+                  <span class="button__form-text">Рассчитать стоимость</span>
+                </button>
+              </form>
+            </div>
+
+            <div class="stats">
+              <div class="stats__item">
+                <span class="stats__title">10.000+</span>
+                <span class="stats__subtitle">цветовых решений</span>
               </div>
-              <div class="nav__menu">
-                <a href="tel:+79001234567" class="nav__link telephone">+7 (900) 123-45-67</a>
-                  <button class="nav__menu-button">
-                    <div class="nav__button-text">Заказать звонок</div>
-                  </button> <!-- /.nav__button -->
+              <div class="stats__item">
+                <span class="stats__title">120.000+</span>
+                <span class="stats__subtitle">&nbsp;м<sup>2</sup> покрасили фасадов</span>
               </div>
-            </nav>
-          </div>
-      </header> <!-- /.header -->
-
-      <div class="page">
-        <div class="main">
-            <span class="main__title">Производство доски для фасадной и интерьерной отделки</span>
-            <p class="main__subtitle">Обработки, покраска и декорирование изделий из массива дерева</p>
-        </div>
-
-        <div class="main__form">
-          <form action="/woomax" method="POST">
-            <input type="text" name="user__name" placeholder="Ваше имя">
-            <button class="button__form" type="button">
-              <span class="button__form-text">Рассчитать стоимость</span>
-            </button>
-          </form>
-        </div>
-
-        <div class="stats">
-          <div class="stats__item">
-            <span class="stats__title">10.000+</span>
-            <span class="stats__subtitle">цветовых решений</span>
-          </div>
-          <div class="stats__item">
-            <span class="stats__title">120.000+</span>
-            <span class="stats__subtitle">&nbsp;м<sup>2</sup> покрасили фасадов</span>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  <!-- /.container -->
+        <!-- /.container -->
   </div> <!-- /.main__page -->
   
  <!-- <img class="wood__absolute" src="img/wood__absolute.png" alt="photo: wood"> -->
@@ -594,7 +596,7 @@
               </div>
               <div class="nav__menu">
                 <a href="tel:+79001234567" class="nav__link telephone">+7 (900) 123-45-67</a>
-                  <button class="nav__menu-button">
+                  <button class="nav__menu-button open__popup">
                     <div class="nav__button-text">Заказать звонок</div>
                   </button> <!-- /.nav__button -->
               </div>
@@ -613,5 +615,19 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup__bg">
+    <div id="popup" class="popup">
+      <img class="close__popup" src="img/popup/close.png" alt="close">
+      <form action="">
+        <input type="text" name="popup__form" placeholder="Ваше имя">
+        <input type="tel" name="popup__form" placeholder="Ваш телефон">
+        <input type="submit" value="Отправить заявку">
+      </form>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
