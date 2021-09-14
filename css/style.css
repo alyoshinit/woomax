@@ -165,7 +165,7 @@ body {
   margin-bottom: 93px;
 
 
-  background: url('../img/bg__main.png') no-repeat center;
+  background: url('../img/main/bg__main.jpg') no-repeat center;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -173,6 +173,26 @@ body {
 .main {
   width: 580px;
   height: 289px;
+}
+
+.main__wood {
+  position: absolute;
+  left: 67%;
+  top: 83.4%;
+  z-index: 0;
+}
+
+.main__bush__up {
+  position: absolute;
+}
+
+.main__man {
+  position: absolute;
+  top: 15.9%;
+  left: 53.5%;
+  z-index: 1;
+  width: 890px;
+  height: 789px;
 }
 
 .main__title {
@@ -195,10 +215,57 @@ body {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #252831;
+  color: #1a1b1f;
 
   width: 406px;
   height: 64px;
+}
+
+/* card */
+.main__card {
+  position: absolute;
+  box-sizing: border-box;
+  background: url('../img/main/main__card-img.png') center no-repeat;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  top: 32%;
+  left: 80%;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+
+  width: 200px;
+  height: 230px;
+}
+
+.main__card__border {
+  border: 1px solid #F3F3F3;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  width: 190px;
+  height: 220px;
+}
+
+.main__card__item-title {
+  font-family: Oswald;
+  font-weight: 300;
+
+  font-size: 15px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #252831;
+
+  margin-top: 15%;
 }
 
 /* form */ 
