@@ -13,15 +13,21 @@ $(function() {
   
   var header = $('#header'),
       mainHeight = $('#main').innerHeight(),
-      scrollOffSet = 0;
+      scrollOffSet = $(window).scrollTop();
+
+  checkScroll(scrollOffSet);
 
   $(window).on('scroll', function() {
     scrollOffSet = $(this).scrollTop();
 
+    checkScroll(scrollOffSet);
+  });
+
+  function checkScroll() {
     if(scrollOffSet >= mainHeight) {
       header.addClass("fixed");
     } else {
       header.removeClass("fixed");
     }
-  });
+  };
 }); 
