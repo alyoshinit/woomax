@@ -1504,6 +1504,12 @@ input:-ms-input-placeholder {
 
 .reviews__image {
   margin-right: 40px;
+
+  cursor: pointer;
+}
+
+.reviews__image:hover {
+  transform: scale(1.1);
 }
 
 .reviews__image:last-child {
@@ -1511,9 +1517,11 @@ input:-ms-input-placeholder {
 }
 
 /* contacts */
+#map {
+  position: absolute;
+}
+
 .contacts-and-map {
-  background: url('../img/contacts/bg.jpg') center no-repeat;
-  background-size: cover;
   height: 700px;
 
   display: flex;
@@ -1741,12 +1749,14 @@ hr {
   left: 0;
   background: rgba(0, 0, 0, .8);
   display: none;
+  overflow-x: none;
 }
 
 .popup {
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1791,14 +1801,30 @@ hr {
 }
 
 .popup form input[type="submit"] {
-  background: #fff;
-  color: #8BC054;
+  background: #8BC054;
+  color: #fff;
+
+  box-shadow: 0px 5px 2px #8BC054;
 
   border: 1px solid #8BC054;
+  border-radius: 5px;
 
   text-transform: uppercase;
 
   cursor: pointer;
+
+  margin-bottom: 40px;
+}
+
+.popup form input[value="Отправить заявку"] {
+  font-size: 20px;
+
+  letter-spacing: 4px;
+}
+
+.popup form strong {
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .no__scroll {
